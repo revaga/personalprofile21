@@ -1,0 +1,13 @@
+body {background-color: plum;}
+
+img {
+  border: 5px solid #555;
+}
+
+div li {
+  display: inline;
+}
+
+.home, .quiz {
+  padding: 25px
+}

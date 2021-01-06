@@ -1,0 +1,88 @@
+<!doctype HTML>
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="form.css">
+  </head>
+  <body>
+  <div id="nav">
+    <a href="program.html"> Home </a>
+    <a href="quiz.html"> ME! </a>
+    <a href="form2.html"> Quiz! </a>
+  </div>
+    <h1> How well do you know me? </h1>
+    <form>
+      <ol>
+        <li>
+          <label> When is my birthday? </label> <br>
+          <input type = "date"> </input>
+        </li>
+        <div id = "answer1"> Right or Wrong: </div>
+
+        <li class="favfood">
+          <label> What is my favorite food? </label> <br>
+          <input type = "radio" name ="food" value = "pizza"> Pizza </input> <br>
+          <input type = "radio" name ="food" value = "cheetos"> Hot Cheetos </input> <br>
+          <input type = "radio" name ="food" value = "boba"> Boba </input> <br>
+          <input type = "radio" name ="food" value = "sushi">  Sushi </input> <br>
+        </li>
+        <div id = "answer2"> Right or Wrong: </div>
+
+        <li>
+          <label> What is my brother's names? </label> <br>
+          <input type = "checkbox" name = "sibling"> Varun </input> <br>
+          <input type = "checkbox" name = "sibling"> Vayum </input> <br>
+          <input type = "checkbox" name = "sibling"> Aaditya </input> <br>
+          <input type = "checkbox" name = "sibling"> Jack </input> <br>
+        </li>
+        <div id = "answer3"> Right or Wrong: </div>
+
+        <li>
+          <label> How old am I? </label>
+          <input type = "number" id = "age"> </input>
+        </li>
+        <div id = "answer4"> Right or Wrong: </div>
+
+        <li>
+          <label> What is my phone password?</label>
+          <input type = "password" type = "number"> </input>
+        </li>
+        <div id = "answer5"> Right or Wrong: </div>
+
+        <li>
+          <label> Which city do I live in? </label>
+          <input> </input>
+        </li>
+        <div id = "answer6"> Right or Wrong: </div>
+
+        <button type = "button" onclick = "rightOrWrong()"> Submit </button>
+
+      </ol>
+    </form>
+
+    <script>
+      var food = document.getElementsByName("food");
+      var age = document.getElementById("age");
+      var answer2 = document.getElementById("answer2");
+      var answer4 = document.getElementById("answer4");
+      function rightOrWrong(){
+        if (food.value = "sushi"){
+          answer2.innerHTML="You got my favorite food right!";
+        }
+        else {
+          answer2.innerHTML="You got my favorite food wrong!";
+        }
+
+        if (age.value == 17){
+          answer4.innerHTML = "You got my age right!";
+        }
+        else {
+          answer4.innerHTML = "You got my age wronge!";
+        }
+
+      }
+
+    </script>
+
+  </body>
+
+</html>
