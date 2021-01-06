@@ -1,0 +1,11 @@
+h1{
+    font-family: "Lucida Console", Courier, monospace;
+}
+
+div li {
+  display: inline;
+}
+
+body {
+  background-color: darkcyan;
+}
