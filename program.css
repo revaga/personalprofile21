@@ -21,6 +21,11 @@ div nav li {
 }
 
 
+.zoom:hover {
+  transform: scale(1.5);
+}
+
+
 div li {
   display: inline;
 }
@@ -40,8 +45,8 @@ div li {
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
-  background-color: black;
-  color: #fff;
+  background-color: lightseagreen;
+  color: white;
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
