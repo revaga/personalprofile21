@@ -9,3 +9,13 @@ div li {
 body {
   background-color: lightskyblue;
 }
+
+form{
+  padding: 50px;
+  margin: 50px;
+  font-family: cursive;
+}
+mi {
+  padding: 10px;
+  margin: 10px;
+}
